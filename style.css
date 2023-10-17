@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    
+}
+
+.container{
+    width:100%;
+    height: 100%; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width:600px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.leftcard{
+    width: 50%;
+    height: 400px;
+    border-radius: 20px;
+    /* background-color: rgb(63, 22, 225); */
+    background: linear-gradient(181deg, #2609e1c7 0%, #2609e1c7 48%, #290093 100%);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: 30px;
+    gap: 35px;
+    align-items: center;
+    color: white;
+}
+
+.leftcard h2{
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.leftcard .circle{
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    background-color: rgb(60 1 213 / 66%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset 0px -270px 70px -100px #23232300; */
+    border-radius: 50%;
+    -webkit-mask-image: linear-gradient(black 10%, black 10%, #00000008 100%);
+}
+
+.circle h1{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.circle span{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.456);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.leftcard #great{
+    font-size: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.leftcard #para{
+    width: 180px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.821);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card .leftcard .textcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.rightcard{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    /* align-items: center; */
+}
+
+.rightcard h1{
+    font-size: 1.1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.boxes #firstbox{
+    width: 240px;
+    border-radius: 6px;
+    height: 45px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(250, 46, 46, 0.092);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+.boxes #secondbox{
+    width: 240px;
+    border-radius: 6px;
+    height: 45px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240, 240, 35, 0.124);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+.boxes #thirdbox{
+    width: 240px;
+    border-radius: 6px;
+    height: 45px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.092);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+.boxes #fourthbox{
+    width: 240px;
+    border-radius: 6px;
+    height: 45px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.092);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+.boxes #firstbox .leftcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    color: red;
+}
+.boxes #secondbox .leftcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    color: rgb(252, 109, 0);
+}
+.boxes #thirdbox .leftcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    color: rgb(1, 208, 104);
+}
+.boxes #fourthbox .leftcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    color: blue;
+}
+
+.rightcard .boxes #firstbox #numbers span{
+    font-weight: bold;
+}
+.rightcard .boxes #secondbox #numbers span{
+    font-weight: bold;
+}
+.rightcard .boxes #thirdbox #numbers span{
+    font-weight: bold;
+}
+.rightcard .boxes #fourthbox #numbers span{
+    font-weight: bold;
+}
+
+.rightcard button{
+    width: 230px;
+    height: 38px;
+    border-radius: 20px;
+    background-color: rgb(33, 33, 201);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
